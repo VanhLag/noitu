@@ -26,12 +26,8 @@ Script này chỉ hoạt động khi bro cài Tampermonkey (hoặc Greasemonkey,
 📸 SCREENSHOTS
 <img width="1920" height="1080" alt="Giao diện Dashboard cực kỳ chỉnh chu, có thống kê tỉ lệ thắng và danh sách từ đã lưu của Bot Nối Từ Pro Max V2." src="https://github.com/user-attachments/assets/5a593cbc-282e-40a8-8c85-f858dde88968" />
 
-📥 CÁCH CÀI ĐẶT
-Cài Tampermonkey (nếu chưa có - xem mục trên).
-
-Vào trang code của script: Link tới file script.user.js
-
-Nhấn "Install" hoặc nút tương tự mà Tampermonkey hiển thị.
+📥 LƯU Ý
+Cài Tampermonkey: https://www.tampermonkey.net/
 
 F5 lại trang https://noitu.pro/
 
