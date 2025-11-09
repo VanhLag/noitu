@@ -6,7 +6,7 @@ tôi nâng cấp thêm vài tính năng giúp con bot nó thông minh hơn thôi
 LƯU Ý : SCRIPT NÀY CHỈ SÀI ĐƯỢC KHI CÀI TEMPERMONKEY
 
 - Features:
-Tự động nối tiếp từ
+Tự động nối tiếp từ \n
 Tắt quảng cáo shopee
 Lưu lại những từ khóa để bot có thể chạy nhanh hơn và tránh tình trạng noitu bóp dái bot (đưa từ ngu)
 Dashboard chỉnh chu hơn, có lưu tỉ lệ thắng
