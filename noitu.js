@@ -14,7 +14,7 @@
 
     console.log('[Bot Launcher v3.3 - "Sạch Sẽ"] Đang khởi động...');
 
-    const SCRIPT_ID = 'vipProBot_v3.3.2_CLEAN';
+    const SCRIPT_ID = 'vipProBot_v3.3';
 
     let isPaused = false;
     let typingSpeed = 500;
