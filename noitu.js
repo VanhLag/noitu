@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         NoiTu.Pro - Bot cực bá
 // @namespace    http://tampermonkey.net/
-// @version      3.3.2 (Bản "Sạch Sẽ" - Cày lại từ đầu)
-// @description  Bot nối từ thông minh, biết diễn và lì đòn (Bản v3.3 "Độ")
-// @author       Hoanglong291 + Vanh (Độ bởi Gemini)
+// @version      3.3
+// @description  Bot nối từ thông minh, biết diễn và lì đòn
+// @author       Hoanglong291 + Vanh
 // @match        *://*.noitu.pro/*
 // @grant        none
 // @run-at       document-end
@@ -12,9 +12,8 @@
 (function() {
     'use strict';
 
-    console.log('[Bot Launcher v3.3.2 - "Sạch Sẽ"] Đang khởi động...');
+    console.log('[Bot Launcher v3.3 - "Sạch Sẽ"] Đang khởi động...');
 
-    // [FIX LỖI] Đổi ID để "làm lại cuộc đời", không "đụng" "sổ" cũ
     const SCRIPT_ID = 'vipProBot_v3.3.2_CLEAN';
 
     let isPaused = false;
@@ -54,7 +53,6 @@
         startTime = Date.now();
     }
 
-    // ======== [Hàm "Phẫu Thuật" (Chỉ "Show" Từ Thắng)] ========
     function showCacheModal() {
         const modalBackdrop = document.createElement('div');
         modalBackdrop.id = 'bot_cache_modal_backdrop';
@@ -171,7 +169,6 @@
         modalBackdrop.appendChild(modalPanel);
         document.body.appendChild(modalBackdrop);
     }
-    // ======== [HẾT "PHẪU THUẬT"] ========
 
     function exportCacheToTxt() {
         console.log('[Bot] Đang xuất cache "Từ Thắng" ra file .txt...');
@@ -216,7 +213,6 @@
     }
 
 
-    // ======== [Hàm "Phẫu Thuật" (Thêm Nút Reset)] ========
     function createProDashboard() {
         if (document.getElementById('bot_dashboard')) return;
 
@@ -273,7 +269,7 @@
         dashboard.appendChild(pauseButton);
 
         const viewCacheButton = document.createElement('button');
-        viewCacheButton.textContent = 'Xem/Xóa "Từ Thắng"'; // [FIX] Đổi tên nút
+        viewCacheButton.textContent = 'Xem/Xóa "Từ Thắng"';
         viewCacheButton.style.width = '100%';
         viewCacheButton.style.padding = '5px';
         viewCacheButton.style.marginTop = '5px';
@@ -308,7 +304,6 @@
         exportCacheButton.style.cursor = 'pointer';
         dashboard.appendChild(exportCacheButton);
 
-        // ======== [MỚI - NÚT RESET STATS] ========
         const resetStatsButton = document.createElement('button');
         resetStatsButton.textContent = 'Reset Stats (W/L, Giờ)';
         resetStatsButton.style.width = '100%';
@@ -378,7 +373,6 @@
 
         exportCacheButton.addEventListener('click', exportCacheToTxt);
 
-        // ======== [MỚI - LOGIC NÚT RESET STATS] ========
         resetStatsButton.addEventListener('click', () => {
             if (confirm('Bạn chắc chắn muốn RESET toàn bộ stats (Thắng/Thua/Giờ) về 0?\n(Cache "Từ Thắng" sẽ được giữ nguyên)')) {
                 wins = 0;
@@ -426,12 +420,7 @@
 
         }, 1000);
     }
-    // ======== [HẾT "PHẪU THUẬT"] ========
-
-
-    // ==========================================
-    // (Lõi Game v3.3 "Ngây Thơ" - Giữ Nguyên)
-    // ==========================================
+    
     function runGameBot(textInput, currentWordSpan) {
         console.log("[Bot] Đã kích hoạt logic CHƠI GAME.");
 
